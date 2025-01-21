@@ -1,0 +1,47 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "friend gpt",
+            "intents": [
+                {
+                    "name": "AskIntent",
+                    "slots": [
+                        {
+                            "name": "prompt",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "what is {prompt}",
+                        "tell me about {prompt}",
+                        "explain {prompt}",
+                        "would you kindly explain {prompt}",
+                        "I'd like to understand {prompt}",
+                        "could you elaborate on {prompt}",
+                        "share your thoughts on {prompt}",
+                        "what are your insights about {prompt}",
+                        "I'm curious about {prompt}",
+                        "might you tell me about {prompt}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}

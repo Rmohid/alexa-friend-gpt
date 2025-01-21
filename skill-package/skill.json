@@ -1,0 +1,54 @@
+{
+    "manifest": {
+        "publishingInformation": {
+            "locales": {
+                "en-US": {
+                    "summary": "Chat with GPT, your sophisticated AI companion with a British accent",
+                    "examplePhrases": [
+                        "Alexa, ask friend gpt about artificial intelligence",
+                        "Alexa, ask friend gpt to analyse modern literature",
+                        "Alexa, ask friend gpt about philosophical concepts"
+                    ],
+                    "keywords": [
+                        "AI",
+                        "education",
+                        "learning",
+                        "knowledge",
+                        "assistant",
+                        "GPT"
+                    ],
+                    "name": "Friend GPT",
+                    "description": "Chat with GPT, your sophisticated AI friend who provides thoughtful insights in an elegant British female voice (Ivy). Perfect for exploring complex topics with nuanced understanding and refined perspective.",
+                    "smallIconUri": "file://assets/images/en-US_smallIcon.png",
+                    "largeIconUri": "file://assets/images/en-US_largeIcon.png"
+                }
+            },
+            "isAvailableWorldwide": true,
+            "testingInstructions": "Required OpenRouter API key must be set in environment variables as OPENROUTER_API_KEY.",
+            "category": "KNOWLEDGE_AND_TRIVIA",
+            "distributionCountries": []
+        },
+        "apis": {
+            "custom": {
+                "endpoint": {
+                    "uri": "arn:aws:lambda:us-east-1:${YOUR_ACCOUNT_ID}:function:${SKILL_NAME}"
+                },
+                "interfaces": []
+            }
+        },
+        "manifestVersion": "1.0",
+        "privacyAndCompliance": {
+            "allowsPurchases": false,
+            "locales": {
+                "en-US": {
+                    "privacyPolicyUrl": "",
+                    "termsOfUseUrl": ""
+                }
+            },
+            "isExportCompliant": true,
+            "containsAds": false,
+            "isChildDirected": false,
+            "usesPersonalInfo": false
+        }
+    }
+}
